@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - Bus Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">BusTrack</div>
+    <nav>
+      <a href="indexlanding.html">Home</a>
+    </nav>
+  </header>
+
+  <!-- Login Form Section -->
+  <section class="login-section">
+    <div class="login-card">
+      <h2>Login</h2>
+      <form id="loginForm">
+  <div class="input-group">
+    <i class="fa-solid fa-envelope"></i>
+    <input type="email" placeholder="Email" required>
+  </div>
+  <div class="input-group">
+    <i class="fa-solid fa-lock"></i>
+    <input type="password" placeholder="Password" required>
+  </div>
+
+  <!-- Role Selection -->
+  <div class="role-selection">
+    <label>
+      <input type="radio" name="role" value="Commuter" checked> Commuter
+    </label>
+    <label>
+      <input type="radio" name="role" value="Admin"> Admin
+    </label>
+  </div>
+
+  <button type="submit">Login</button>
+</form>
+
+      <p class="signup-link">Don't have an account? <a href="signin.html">Signup</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="faq.html">FAQ</a>
+
+  </footer>
+
+  <button id="voice-btn" class="voice-button">
+    <i class="fa-solid fa-microphone"></i>
+  </button>
+
+  
+</body>
+</html>

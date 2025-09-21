@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <!-- Font Awesome for icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+</head>
+<body class="dashboard-body">
+  <div class="dashboard-container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        Admin Panel
+      </div>
+      <nav class="sidebar-nav">
+        <a href="#"><i class="fa-solid fa-route"></i> Routes</a>
+        <a href="analytic.html"><i class="fa-solid fa-chart-line"></i> Analytics</a>
+        <a href="#"><i class="fa-solid fa-bullhorn"></i> Complaints</a>
+        <a href="lostandfound.html"><i class="fa-solid fa-bag-shopping"></i> Lost & Found</a>
+        <a href="settings.html"><i class="fa-solid fa-gear"></i> Settings</a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Navbar -->
+      <header class="navbar">
+        <h1>Dashboard</h1>
+        <button class="logout-btn">Log Out</button>
+      </header>
+
+      <!-- Dashboard Content -->
+      <div class="content-area">
+        <!-- Cards -->
+        <div class="cards">
+          <div class="card">
+            <h3>Active Buses</h3>
+            <p class="card-value text-indigo">42</p>
+          </div>
+          <div class="card">
+            <h3>Alerts</h3>
+            <p class="card-value text-red">5</p>
+          </div>
+          <div class="card">
+            <h3>Passengers Today</h3>
+            <p class="card-value text-green">1,284</p>
+          </div>
+        </div>
+
+        <!-- Quick Actions -->
+        <h2 class="section-title">Quick Actions</h2>
+        <div class="actions">
+          <button class="btn btn-primary"><i class="fa-solid fa-plus"></i> Add/Edit Route</button>
+          <button class="btn btn-warning"><i class="fa-solid fa-triangle-exclamation"></i> Send Alert</button>
+          <button class="btn btn-danger"><i class="fa-solid fa-siren-on"></i> Check Emergency</button>
+        </div>
+      </div>
+    </main>
+
+    <button id="voice-btn" class="voice-button-admin">
+    <i class="fa-solid fa-microphone"></i>
+  </button>
+
+
+  </div>
+</body>
+</html>
