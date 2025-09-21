@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Monitor Routes</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+</head>
+<body class="dashboard-body">
+  <div class="dashboard-container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">Admin Panel</div>
+      <nav class="sidebar-nav">
+        <a href="admindashboard.html"><i class="fa-solid fa-gauge"></i> Dashboard</a>
+        <a href="analytic.html"><i class="fa-solid fa-chart-line"></i> Analytics</a>
+        <a href="viewcomplaints.html"><i class="fa-solid fa-bullhorn"></i> View Complaints</a>
+        <a href="monEmergency.html"><i class="fa-solid fa-bag-shopping"></i>Moniter Emergency</a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header class="navbar">
+        <h1>Monitor Bus Routes</h1>
+        <button class="logout-btn">Logout</button>
+      </header>
+
+      <div class="content-area">
+
+        <!-- Route Summary Cards -->
+        <div class="cards">
+          <div class="card">
+            <h3>Total Routes</h3>
+            <p class="card-value text-indigo">18</p>
+          </div>
+          <div class="card">
+            <h3>Active Buses</h3>
+            <p class="card-value text-green">45</p>
+          </div>
+          <div class="card">
+            <h3>Pending Updates</h3>
+            <p class="card-value text-red">3</p>
+          </div>
+        </div>
+
+        <!-- Routes Table -->
+        <section class="card">
+          <h2 class="section-title">All Routes</h2>
+          <table class="routes-table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Route Number</th>
+                <th>Start Point</th>
+                <th>End Point</th>
+                <th>Stops</th>
+                <th>Active Buses</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="routes-list">
+              <tr>
+                <td>1</td>
+                <td>BUS 101</td>
+                <td>Main Station</td>
+                <td>Central Park</td>
+                <td>5</td>
+                <td>2</td>
+                <td>
+                  <button class="btn btn-primary edit-route">Edit</button>
+                  <button class="btn btn-red delete-route">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>BUS 122</td>
+                <td>North Terminal</td>
+                <td>City Square</td>
+                <td>7</td>
+                <td>3</td>
+                <td>
+                  <button class="btn btn-primary edit-route">Edit</button>
+                  <button class="btn btn-red delete-route">Delete</button>
+                </td>
+              </tr>
+              <!-- Add more routes dynamically with JS -->
+            </tbody>
+          </table>
+        </section>
+
+      </div>
+    </main>
+
+    <!-- Voice Assistant -->
+    <button id="voice-btn" class="voice-button-admin">
+      <i class="fa-solid fa-microphone"></i>
+    </button>
+
+  </div>
+</body>
+</html>

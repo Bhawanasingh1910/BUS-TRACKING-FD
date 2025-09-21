@@ -22,11 +22,10 @@
         Admin Panel
       </div>
       <nav class="sidebar-nav">
-        <a href="#"><i class="fa-solid fa-route"></i> Routes</a>
+        <a href="manageroute"><i class="fa-solid fa-route"></i>Manage Routes</a>
         <a href="analytic.html"><i class="fa-solid fa-chart-line"></i> Analytics</a>
-        <a href="#"><i class="fa-solid fa-bullhorn"></i> Complaints</a>
-        <a href="lostandfound.html"><i class="fa-solid fa-bag-shopping"></i> Lost & Found</a>
-        <a href="settings.html"><i class="fa-solid fa-gear"></i> Settings</a>
+        <a href="viewcomplaints.html"><i class="fa-solid fa-bullhorn"></i>View Complaints</a>
+        <a href="monEmergency.html"><i class="fa-solid fa-bag-shopping"></i>Moniter Emergency</a>
       </nav>
     </aside>
 
@@ -35,7 +34,7 @@
       <!-- Navbar -->
       <header class="navbar">
         <h1>Dashboard</h1>
-        <button class="logout-btn">Log Out</button>
+        <button class="logout-btn" onclick="logout()">Logout</button>
       </header>
 
       <!-- Dashboard Content -->
@@ -59,9 +58,9 @@
         <!-- Quick Actions -->
         <h2 class="section-title">Quick Actions</h2>
         <div class="actions">
-          <button class="btn btn-primary"><i class="fa-solid fa-plus"></i> Add/Edit Route</button>
-          <button class="btn btn-warning"><i class="fa-solid fa-triangle-exclamation"></i> Send Alert</button>
-          <button class="btn btn-danger"><i class="fa-solid fa-siren-on"></i> Check Emergency</button>
+          <button onclick="location.href='manageroute.html'" class="btn btn-primary"><i class="fa-solid fa-plus"></i> Add/Edit Route</button>
+          <button onclick="location.href='.html'" class="btn btn-warning"><i class="fa-solid fa-triangle-exclamation"></i> Send Alert</button>
+          <button onclick="location.href='monEmergency.html'" class="btn btn-danger"><i class="fa-solid fa-siren-on"></i> Check Emergency</button>
         </div>
       </div>
     </main>

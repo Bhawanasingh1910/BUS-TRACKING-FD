@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Monitor Emergencies</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+</head>
+<body class="dashboard-body">
+  <div class="dashboard-container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">Admin Panel</div>
+      <nav class="sidebar-nav">
+        <a href="admindashboard.html"><i class="fa-solid fa-bus"></i> Dashboard</a>
+       <a href="manageroute.html"><i class="fa-solid fa-route"></i>Manage Routes</a>
+        <a href="analytic.html"><i class="fa-solid fa-chart-line"></i> Analytics</a>
+        <a href="viewcomplaints.html"><i class="fa-solid fa-bullhorn"></i>View Complaints</a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Navbar -->
+      <header class="navbar">
+        <h1>Monitor Emergency</h1>
+        <button class="logout-btn" onclick="logout()">Logout</button>
+      </header>
+
+      <div class="content-area">
+        <!-- Emergency Summary Cards -->
+        <div class="cards">
+          <div class="card">
+            <h3>Total Reports</h3>
+            <p class="card-value text-indigo">12</p>
+          </div>
+          <div class="card">
+            <h3>Active Emergencies</h3>
+            <p class="card-value text-red">5</p>
+          </div>
+          <div class="card">
+            <h3>Resolved</h3>
+            <p class="card-value text-green">7</p>
+          </div>
+        </div>
+
+        <!-- Emergency List Table -->
+        <section class="card">
+          <h2 class="section-title">Emergency Reports</h2>
+          <table class="emergency-table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Type</th>
+                <th>Reported By</th>
+                <th>Message</th>
+                <th>Status</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="emergency-list">
+              <tr>
+                <td>1</td>
+                <td>BUS 122</td>
+                <td>Jolly</td>
+                <td>Person fainted on Bus stop</td>
+                <td class="status-active">Active</td>
+                <td><button class="btn btn-green mark-resolved">Mark Resolved</button></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>BUS 574</td>
+                <td>Aliya</td>
+                <td>Bus Accident</td>
+                <td class="status-active">Active</td>
+                <td><button class="btn btn-green mark-resolved">Mark Resolved</button></td>
+              </tr>
+              <!-- Add more rows dynamically with JS -->
+            </tbody>
+          </table>
+        </section>
+      </div>
+    </main>
+
+    <!-- Voice Assistant -->
+    <button id="voice-btn" class="voice-button-admin">
+      <i class="fa-solid fa-microphone"></i>
+    </button>
+
+  </div>
+</body>
+</html>

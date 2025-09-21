@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>View Complaints</title>
+  <link rel="stylesheet" href="style.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  >
+  <script defer src="script.js"></script>
+</head>
+<body class="dashboard-body">
+
+  <div class="dashboard-container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">Admin Panel</div>
+      <nav class="sidebar-nav">
+        <a href="admindashboard.html"><i class="fa-solid fa-bus"></i> Dashboard</a>
+       <a href="manageroute.html"><i class="fa-solid fa-route"></i>Manage Routes</a>
+        <a href="analytic.html"><i class="fa-solid fa-chart-line"></i>Analytics</a>
+        <a href="monEmergency.html"><i class="fa-solid fa-bag-shopping"></i>Moniter Emergency</a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header class="navbar">
+        <h1>Passenger Complaints</h1>
+        <button class="logout-btn" onclick="logout()">Logout</button>
+      </header>
+
+      <div class="content-area">
+        <!-- Complaint Summary Cards -->
+        <div class="cards">
+          <div class="card">
+            <h3>Total Complaints</h3>
+            <p class="card-value text-indigo">24</p>
+          </div>
+          <div class="card">
+            <h3>Pending</h3>
+            <p class="card-value text-red">8</p>
+          </div>
+          <div class="card">
+            <h3>Resolved</h3>
+            <p class="card-value text-green">16</p>
+          </div>
+        </div>
+
+        <!-- Complaint List -->
+        <section class="list-card">
+          <h2>All Complaints</h2>
+
+          <!-- Search -->
+          <div class="search-bar">
+            <input type="text" placeholder="Search complaints..." id="complaint-search"/>
+            <button class="search-btn" id="search-btn"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
+          </div>
+
+          <!-- Complaints -->
+          <div class="items" id="complaint-list">
+            <div class="item">
+              <div>
+                <p class="item-title">Bus was late</p>
+                <p class="item-sub">Reported by John Doe — Bus #42 — 15 Sep 2025</p>
+              </div>
+              <span class="status pending">Pending</span>
+              <button class="btn btn-green mark-resolved">Mark Resolved</button>
+            </div>
+
+            <div class="item">
+              <div>
+                <p class="item-title">Driver behavior issue</p>
+                <p class="item-sub">Reported by Jane Smith — Bus #12 — 14 Sep 2025</p>
+              </div>
+              <span class="status resolved">Resolved</span>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Voice Button -->
+    <button id="voice-btn" class="voice-button-admin">
+      <i class="fa-solid fa-microphone"></i>
+    </button>
+
+  </div>
+
+</body>
+</html>

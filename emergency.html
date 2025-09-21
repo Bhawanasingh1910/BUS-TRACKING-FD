@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emergency Support</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+</head>
+<body class="dashboard-body">
+  <div class="dashboard-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">Commuter Panel</div>
+      <nav class="sidebar-nav">
+        <a href="commuter.html"><i class="fa-solid fa-bus"></i> Dashboard</a>
+        <a href="trackbus.html"><i class="fa-solid fa-location-dot"></i> Track Bus</a>
+        <a href="notifications.html"><i class="fa-solid fa-bell"></i> Notifications</a>
+        <a href="lostandfound.html"><i class="fa-solid fa-bag-shopping"></i> Lost & Found</a>
+        <a href="feedback.html"><i class="fa-solid fa-comment-dots"></i> Feedback</a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Navbar -->
+      <header class="navbar">
+        <h1>Emergency Support</h1>
+      </header>
+
+      <div class="content-area">
+        <!-- Emergency Numbers -->
+        <div class="cards">
+          <div class="card">
+            <h3><i class="fa-solid fa-truck-medical text-red"></i> Ambulance</h3>
+            <p class="card-value">Dial 108</p>
+            <a href="tel:108" class="btn btn-danger">Call Now</a>
+          </div>
+          <div class="card">
+            <h3><i class="fa-solid fa-shield-halved text-blue"></i> Police</h3>
+            <p class="card-value">Dial 100</p>
+            <a href="tel:100" class="btn btn-warning">Call Now</a>
+          </div>
+          <div class="card">
+            <h3><i class="fa-solid fa-fire-extinguisher text-orange"></i> Fire</h3>
+            <p class="card-value">Dial 101</p>
+            <a href="tel:101" class="btn btn-primary">Call Now</a>
+          </div>
+        </div>
+
+        <!-- Report Emergency Form -->
+        <section class="card">
+          <h2 class="section-title">Report an Emergency</h2>
+          <form id="emergency-form">
+            <textarea
+              id="emergency-msg"
+              placeholder="Describe the emergency..."
+              class="input"
+              required
+            ></textarea>
+            <button type="submit" class="btn btn-danger">Send Report</button>
+          </form>
+          <div id="emergency-success" class="feedback-success"></div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Voice Button -->
+    <button id="voice-btn" class="voice-button-admin">
+      <i class="fa-solid fa-microphone"></i>
+    </button>
+  </div>
+</body>
+</html>

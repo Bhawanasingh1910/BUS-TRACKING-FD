@@ -4,7 +4,7 @@
   --secondary-color: #ff8000;
   --voice-color:#85c0d2de;
   --text-color: #222;
-  --card-bg: #a2d8e8b6;
+  --card-bg: #95cfe1ec;
   --footer-bg: var(--primary-color);
 
   --shadow-light: 0px 4px 8px rgba(0,0,0,0.1);
@@ -35,7 +35,7 @@ body {
   position: relative;
 
   /* Base background */
-  background: url("image/cloud.jpg") no-repeat center center/cover;
+  background: url("image/road3.jpg") no-repeat center center/cover;
   background-attachment: fixed; 
   animation: zoomBg 12s ease-in-out infinite alternate;
   opacity: 1;
@@ -152,14 +152,14 @@ body {
 /* Features Section */
 .features {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 20px;
-  padding: 20px 20px;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 40px;
+  padding: 40px 40px;
 }
 
 .card {
   background: var(--card-bg);
-  padding: 20px;
+  padding: 10px;
   border-radius: var(--radius-medium);
   box-shadow: var(--shadow-light);
   transition: transform 0.3s, box-shadow 0.3s;
@@ -846,3 +846,216 @@ h2 {
   color: #155724;
 }
 
+
+/* Emergency Table */
+.emergency-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.emergency-table th,
+.emergency-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.emergency-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.status-active {
+  color: red;
+  font-weight: bold;
+}
+
+.status-resolved {
+  color: green;
+  font-weight: bold;
+}
+
+.mark-resolved {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #28a745;
+}
+
+.mark-resolved:hover {
+  background-color: #218838;
+}
+/* Emergency Table */
+.emergency-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.emergency-table th,
+.emergency-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.emergency-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.status-active {
+  color: red;
+  font-weight: bold;
+}
+
+.status-resolved {
+  color: green;
+  font-weight: bold;
+}
+
+.mark-resolved {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #28a745;
+}
+
+.mark-resolved:hover {
+  background-color: #218838;
+}
+
+
+
+
+/* Complaint list */
+.list-card .items {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.item {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.item .item-title {
+  font-weight: bold;
+}
+
+.item .item-sub {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.status {
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.status.pending {
+  background-color: #ffc107;
+  color: #fff;
+}
+
+.status.resolved {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.mark-resolved {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #28a745;
+}
+
+.mark-resolved:hover {
+  background-color: #218838;
+}
+
+/* Search bar */
+.search-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.search-bar button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+}
+
+
+
+/* Routes Table */
+.routes-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.routes-table th,
+.routes-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.routes-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.edit-route {
+  padding: 5px 10px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+}
+
+.edit-route:hover {
+  background-color: #0056b3;
+}
+
+.delete-route {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.delete-route:hover {
+  background-color: #b52a37;
+}

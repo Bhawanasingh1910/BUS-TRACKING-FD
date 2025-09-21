@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Commuter Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+</head>
+<body class="dashboard-body">
+  <div class="dashboard-container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        Commuter Panel
+      </div>
+      <nav class="sidebar-nav">
+        <a href="trackbus.html"><i class="fa-solid fa-bus"></i> Track Bus</a>
+        <a href="notifications.html"><i class="fa-solid fa-bell"></i> Notifications</a>
+        <a href="lostandfound.html"><i class="fa-solid fa-bag-shopping"></i> Lost & Found</a>
+        <a href="feedback.html"><i class="fa-solid fa-comment-dots"></i> Feedback</a>
+        <a href="emergency.html"><i class="fa-solid fa-life-ring"></i> Emergency</a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Navbar -->
+      <header class="navbar">
+        <h1>Commuter Dashboard</h1>
+        <button class="logout-btn" onclick="logout()">Logout</button>
+      </header>
+
+      <!-- Dashboard Content -->
+      <div class="content-area">
+        <!-- Cards -->
+        <div class="cards">
+          <div class="card">
+            <h3>Next Bus</h3>
+            <p class="card-value text-indigo">5 mins</p>
+          </div>
+          <div class="card">
+            <h3>Active Routes</h3>
+            <p class="card-value text-green">12</p>
+          </div>
+          <div class="card">
+            <h3>Alerts</h3>
+            <p class="card-value text-red">2</p>
+          </div>
+        </div>
+
+        <!-- Quick Actions -->
+        <h2 class="section-title">Quick Actions</h2>
+        <div class="actions">
+          <button onclick="location.href='trackbus.html'" class="btn btn-primary"><i class="fa-solid fa-location-dot"></i> Find My Bus</button>
+          <button onclick="location.href='notifications.html'" class="btn btn-warning"><i class="fa-solid fa-bell"></i> View Alerts</button>
+          <button onclick="location.href='emergency.html'" class="btn btn-danger"><i class="fa-solid fa-phone"></i> Emergency Call</button>
+        </div>
+      </div>
+    </main>
+
+    <!-- Voice Assistant -->
+    <button id="voice-btn" class="voice-button-admin">
+      <i class="fa-solid fa-microphone"></i>
+    </button>
+
+  </div>
+</body>
+</html>

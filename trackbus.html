@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Track Bus</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+</head>
+<body class="dashboard-body">
+  <div class="dashboard-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">Commuter Panel</div>
+      <nav class="sidebar-nav">
+        <a href="commuter.html"><i class="fa-solid fa-bus"></i> Dashboard</a>
+        <a href="notifications.html"><i class="fa-solid fa-bell"></i> Notifications</a>
+        <a href="lostandfound.html"><i class="fa-solid fa-bag-shopping"></i> Lost & Found</a>
+        <a href="feedback.html"><i class="fa-solid fa-comment-dots"></i> Feedback</a>
+        <a href="emergency.html"><i class="fa-solid fa-life-ring"></i> Emergency</a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Navbar -->
+      <header class="navbar">
+        <h1>Track Bus</h1>
+      </header>
+
+      <div class="content-area">
+        <!-- Bus Search -->
+        <section class="card">
+          <h2 class="section-title">Find Your Bus</h2>
+          <form id="track-form" class="form-inline">
+            <input
+              type="text"
+              id="bus-number"
+              placeholder="Enter Bus Number..."
+              class="input"
+              required
+            />
+            <button type="submit" class="btn btn-primary">
+              <i class="fa-solid fa-magnifying-glass"></i> Track
+            </button>
+          </form>
+          <div id="bus-status" class="feedback-success"></div>
+        </section>
+
+        <!-- Map Placeholder -->
+        <section class="card">
+          <h2 class="section-title">Live Location</h2>
+          <div id="map" class="map-placeholder">
+            <i class="fa-solid fa-map-location-dot fa-3x text-blue"></i>
+            <p>Bus location will appear here.</p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Voice Button -->
+    <button id="voice-btn" class="voice-button-admin">
+      <i class="fa-solid fa-microphone"></i>
+    </button>
+  </div>
+</body>
+</html>

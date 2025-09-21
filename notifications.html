@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notifications</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+</head>
+<body class="dashboard-body">
+  <div class="dashboard-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">Commuter Panel</div>
+      <nav class="sidebar-nav">
+        <a href="commuter.html"><i class="fa-solid fa-bus"></i> Dashboard</a>
+        <a href="trackbus.html"><i class="fa-solid fa-location-dot"></i> Track Bus</a>
+        <a href="lostandfound.html"><i class="fa-solid fa-bag-shopping"></i> Lost & Found</a>
+        <a href="feedback.html"><i class="fa-solid fa-comment-dots"></i> Feedback</a>
+        <a href="emergency.html"><i class="fa-solid fa-life-ring"></i> Emergency</a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Navbar -->
+      <header class="navbar">
+        <h1>Notifications</h1>
+      </header>
+
+      <div class="content-area">
+        <!-- Notification Cards -->
+        <section class="cards">
+          <div class="card">
+            <h3><i class="fa-solid fa-bus text-blue"></i> Bus Delay</h3>
+            <p class="card-value">Bus 23 delayed by 10 mins</p>
+            <span class="notification-time">10:15 AM</span>
+          </div>
+          <div class="card">
+            <h3><i class="fa-solid fa-triangle-exclamation text-red"></i> Emergency Alert</h3>
+            <p class="card-value">Accident reported near Main Street</p>
+            <span class="notification-time">09:50 AM</span>
+          </div>
+          <div class="card">
+            <h3><i class="fa-solid fa-calendar-check text-green"></i> Schedule Update</h3>
+            <p class="card-value">New timetable for Bus 15 effective today</p>
+            <span class="notification-time">08:30 AM</span>
+          </div>
+        </section>
+
+        <!-- Clear Notifications Button -->
+        <section class="card">
+          <h2 class="section-title">Manage Notifications</h2>
+          <button id="clear-notifications" class="btn btn-primary">Clear All</button>
+          <div id="clear-success" class="feedback-success"></div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Voice Button -->
+    <button id="voice-btn" class="voice-button-admin">
+      <i class="fa-solid fa-microphone"></i>
+    </button>
+  </div>
+</body>
+</html>
