@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", () => {
     } else if (command.includes("notifications")) {
       window.location.href = "notifications.html";
     } else {
-      alert("❌ Sorry, I didn’t understand: " + command);
+      alert("❌ Sorry, I didn't understand: " + command);
     }
   });
 });
@@ -127,7 +127,7 @@ const logoutBtn = document.querySelector('.logout-btn');
 if (logoutBtn) {
   logoutBtn.addEventListener('click', () => {
     if (confirm("Are you sure you want to log out?")) {
-      window.location.href = "indexlanding.html"; // redirect to login page
+      window.location.href = "index.html"; // redirect to login page
     }
   });
 }
